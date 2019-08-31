@@ -1,23 +1,24 @@
 if global.lit {
+	var inst
 	switch global.light_dir {
 		case LIGHT.NORTH:
-			var inst = instance_create_layer(x, y, "Shadow", oShadow)
-			inst.image_yscale = shadow_down_scale-4
+			inst = instance_create_layer(x, y, "Shadow", oShadow)
+			inst.image_yscale = shadow_down_scale
 		break;
 	
 		case LIGHT.EAST:
-			var inst = instance_create_layer(x, y, "Shadow", oShadow)
-			inst.image_xscale = -shadow_left_scale+2
+			inst = instance_create_layer(x, y, "Shadow", oShadow)
+			inst.image_xscale = -shadow_left_scale
 		break;
 	
 		case LIGHT.SOUTH:
-			var inst = instance_create_layer(x, y, "Shadow", oShadow)
-			inst.image_yscale = -shadow_up_scale+2
+			inst = instance_create_layer(x, y, "Shadow", oShadow)
+			inst.image_yscale = -shadow_up_scale
 		break;
 	
 		case LIGHT.WEST:
-			var inst = instance_create_layer(x, y, "Shadow", oShadow)
-			inst.image_xscale = shadow_right_scale-4
+			inst = instance_create_layer(x, y, "Shadow", oShadow)
+			inst.image_xscale = shadow_right_scale
 		break;
 	}
 }
