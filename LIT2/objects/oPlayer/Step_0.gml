@@ -39,13 +39,13 @@ switch (state) {
 		//	motiony = motiony / 2
 	
 		
-		if (place_meeting(x+motionx, y, oBox)) {
+		if (place_meeting(x+motionx, y, oCollidable)) {
 			//while (!place_meeting(x+sign(motionx), y, oWall)) {
 			//	x += sign(motionx);
 			//}
 			motionx = 0;
 		}
-		if (place_meeting(x, y+motiony, oBox)) {
+		if (place_meeting(x, y+motiony, oCollidable)) {
 		//	//while (!place_meeting(x, y+sign(motiony), oWall)) {
 		//	//	y += sign(motiony);
 		//	//}
@@ -73,16 +73,16 @@ switch (state) {
 			motiony = max(motiony-ACCELERATION*5, -DASH_SPEED)
 		
 		
-		if (place_meeting(x+motionx, y, oBox)) {
+		if (place_meeting(x+motionx, y, oCollidable)) {
 			//while (!place_meeting(x+sign(motionx), y, oWall)) {
 			//	x += sign(motionx);
 			//}
 			motionx = 0;
 		}
-		if (place_meeting(x, y+motiony, oBox)) {
-		//	//while (!place_meeting(x, y+sign(motiony), oWall)) {
-		//	//	y += sign(motiony);
-		//	//}
+		if (place_meeting(x, y+motiony, oCollidable)) {
+			//while (!place_meeting(x, y+sign(motiony), oWall)) {
+			//	y += sign(motiony);
+			//}
 			motiony = 0;
 		}
 		
@@ -94,4 +94,8 @@ switch (state) {
 		else
 			state = MOVE
 	break;
+}
+
+if global.lit and !place_meeting(x, y, oShadow) {
+	instance_destroy()
 }
