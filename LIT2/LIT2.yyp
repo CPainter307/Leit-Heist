@@ -47,6 +47,14 @@
             }
         },
         {
+            "Key": "1109ede3-fc25-4dfe-9772-da9f1fc30c01",
+            "Value": {
+                "id": "06d8029b-b884-4bc3-86bf-d58819273c55",
+                "resourcePath": "sprites\\sBoySprint\\sBoySprint.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "18d0e8af-0d9d-4048-ab1e-ed5b6561ed6d",
             "Value": {
                 "id": "f1f5850f-7386-48c3-b858-bf77c1f0e795",
@@ -60,6 +68,22 @@
                 "id": "eca77c54-42f7-4871-8d38-b8d8fd69de24",
                 "resourcePath": "sprites\\sBox\\sBox.yy",
                 "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "1b9ba0d1-33a4-4353-a395-d5a18acba3f8",
+            "Value": {
+                "id": "217836e7-17c8-4ff5-84c7-abe26ab97c66",
+                "resourcePath": "sprites\\sBoyRight\\sBoyRight.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "2357a970-3232-4d45-843d-051f6d17342d",
+            "Value": {
+                "id": "8dd255f5-d1a1-471e-93be-ad52987a4c59",
+                "resourcePath": "timelines\\tlold2Shine\\tlold2Shine.yy",
+                "resourceType": "GMTimeline"
             }
         },
         {
@@ -103,6 +127,14 @@
             }
         },
         {
+            "Key": "59820b0d-76e4-4c51-b7e4-d98a100a3995",
+            "Value": {
+                "id": "9ec21159-61bc-409d-be34-e44f6a4bb9da",
+                "resourcePath": "objects\\oPlayer\\oPlayer.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "5c7bff7c-001d-4f42-a57a-ae3a5dd3f852",
             "Value": {
                 "id": "dfbd6e01-3de6-4106-9408-d315742704c0",
@@ -135,11 +167,27 @@
             }
         },
         {
+            "Key": "937a3a28-91e1-443e-b144-ee0e533f7180",
+            "Value": {
+                "id": "405bcf84-ab14-428a-9659-c4f20893beec",
+                "resourcePath": "sprites\\sBoyLeft\\sBoyLeft.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "96b89f76-173b-4072-adfc-090c8289fc93",
             "Value": {
                 "id": "38533137-3756-4ec5-8112-5e09fe3e3297",
                 "resourcePath": "views\\96b89f76-173b-4072-adfc-090c8289fc93.yy",
                 "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "9946d674-f061-41c0-8698-30574ad834c6",
+            "Value": {
+                "id": "ede437fd-121a-4f3b-b527-9116ea499791",
+                "resourcePath": "sprites\\sBoyDown\\sBoyDown.yy",
+                "resourceType": "GMSprite"
             }
         },
         {
@@ -162,7 +210,7 @@
             "Key": "a505e8c9-dfd9-4be9-aae3-1ee9cf14f87e",
             "Value": {
                 "id": "c3af0a9b-c3e9-4a87-9f4e-41af0c59b593",
-                "resourcePath": "timelines\\tlShine\\tlShine.yy",
+                "resourcePath": "timelines\\tlOldShine\\tlOldShine.yy",
                 "resourceType": "GMTimeline"
             }
         },
@@ -255,6 +303,14 @@
             }
         },
         {
+            "Key": "f064077d-6aaa-4193-952a-7b464a4c743e",
+            "Value": {
+                "id": "ce8fe9f3-fbaa-4361-9054-886334a94bd4",
+                "resourcePath": "timelines\\tlShine\\tlShine.yy",
+                "resourceType": "GMTimeline"
+            }
+        },
+        {
             "Key": "f19c3a94-1867-481d-b913-79fd8bfbd484",
             "Value": {
                 "id": "92b0fff2-0be8-4caf-8027-796431c6fafc",
@@ -266,7 +322,7 @@
             "Key": "fed17cfa-8ea3-4fa3-b87e-d5cbbbdf2015",
             "Value": {
                 "id": "986f4ed2-9a36-44c0-94e7-b8860a420c84",
-                "resourcePath": "sprites\\sBoy\\sBoy.yy",
+                "resourcePath": "sprites\\sBoyUp\\sBoyUp.yy",
                 "resourceType": "GMSprite"
             }
         }

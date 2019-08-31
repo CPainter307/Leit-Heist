@@ -1,0 +1,97 @@
+
+
+sprite_index = sprite[face, movement];
+
+
+switch (state) {
+	case MOVE:
+		xdir = keyboard_check(ord("D")) - keyboard_check(ord("A"))
+		ydir = keyboard_check(ord("S")) - keyboard_check(ord("W"))
+
+		if xdir > 0
+			motionx = min(motionx+ACCELERATION, MAX_SPEED)
+		if xdir < 0
+			motionx = max(motionx-ACCELERATION, -MAX_SPEED)
+	
+		if ydir > 0
+			motiony = min(motiony+ACCELERATION, MAX_SPEED)
+		if ydir < 0
+			motiony = max(motiony-ACCELERATION, -MAX_SPEED)
+	
+		if xdir == 0
+			motionx = lerp(motionx, 0, 0.5)
+		if ydir == 0
+			motiony = lerp(motiony, 0, 0.5)
+	
+		if xdir == 0 and ydir == 0 {
+			movement = IDLE
+			image_speed = 0
+			image_index = 0
+		} else image_speed = 1
+
+		if !(xdir == 0 and ydir == 0)
+			dir = point_direction(0, 0, xdir, ydir);
+		face = round(dir / 90);
+		if (face == 4) face = RIGHT;
+
+		//if !(xdir == 0 and ydir == 0)
+		//	motionx = motionx / 2
+		//	motiony = motiony / 2
+	
+		
+		if (place_meeting(x+motionx, y, oBox)) {
+			//while (!place_meeting(x+sign(motionx), y, oWall)) {
+			//	x += sign(motionx);
+			//}
+			motionx = 0;
+		}
+		if (place_meeting(x, y+motiony, oBox)) {
+		//	//while (!place_meeting(x, y+sign(motiony), oWall)) {
+		//	//	y += sign(motiony);
+		//	//}
+			motiony = 0;
+		}
+	
+		x += motionx
+		y += motiony
+		
+		if keyboard_check_pressed(vk_space) {
+			dash_timer = 0
+			state = DASH
+		}
+	break;
+	
+	case DASH:
+		if xdir > 0
+			motionx = min(motionx+ACCELERATION*5, DASH_SPEED)
+		if xdir < 0
+			motionx = max(motionx-ACCELERATION*5, -DASH_SPEED)
+	
+		if ydir > 0
+			motiony = min(motiony+ACCELERATION*5, DASH_SPEED)
+		if ydir < 0
+			motiony = max(motiony-ACCELERATION*5, -DASH_SPEED)
+		
+		
+		if (place_meeting(x+motionx, y, oBox)) {
+			//while (!place_meeting(x+sign(motionx), y, oWall)) {
+			//	x += sign(motionx);
+			//}
+			motionx = 0;
+		}
+		if (place_meeting(x, y+motiony, oBox)) {
+		//	//while (!place_meeting(x, y+sign(motiony), oWall)) {
+		//	//	y += sign(motiony);
+		//	//}
+			motiony = 0;
+		}
+		
+		x += motionx
+		y += motiony
+		
+		if dash_timer < DASH_TIME
+			dash_timer++
+		else
+			state = MOVE
+	break;
+}
