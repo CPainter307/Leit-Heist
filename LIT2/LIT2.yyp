@@ -135,10 +135,18 @@
             }
         },
         {
-            "Key": "4666a23b-3e65-4fbc-8bfb-89329e4d3607",
+            "Key": "31cd8c97-ac09-4fc0-89d0-155f9a38b674",
             "Value": {
-                "id": "667c11c6-09ca-4333-b958-24f149fd30f2",
-                "resourcePath": "sprites\\sRoomDark\\sRoomDark.yy",
+                "id": "c3e26dde-5e01-47c1-b1b0-aaa2d466fcd4",
+                "resourcePath": "sprites\\sRoomBGLit\\sRoomBGLit.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "4750c1c0-ca13-4eb0-b19c-115b8ab1f3e5",
+            "Value": {
+                "id": "3672398f-8835-4e76-bb22-5e51f7557fc2",
+                "resourcePath": "sprites\\sStairs\\sStairs.yy",
                 "resourceType": "GMSprite"
             }
         },
@@ -146,7 +154,7 @@
             "Key": "4f84ebe4-737d-47be-8210-9878988b86d0",
             "Value": {
                 "id": "d028be24-cf1d-49eb-8dd0-a06bec73baa4",
-                "resourcePath": "sprites\\sRoomDark2\\sRoomDark2.yy",
+                "resourcePath": "sprites\\sRoomDark\\sRoomDark.yy",
                 "resourceType": "GMSprite"
             }
         },
@@ -271,6 +279,22 @@
             }
         },
         {
+            "Key": "9ee270a3-d325-4ed1-a085-4dc1fe0b73f8",
+            "Value": {
+                "id": "41552cdc-8cf5-47aa-8ea2-801a9be12616",
+                "resourcePath": "tilesets\\tLightRoom\\tLightRoom.yy",
+                "resourceType": "GMTileSet"
+            }
+        },
+        {
+            "Key": "a0e528f3-59f7-4a0f-bcff-996c3cf0d749",
+            "Value": {
+                "id": "85214c20-6a36-4ce9-b576-82f5cd0d7f56",
+                "resourcePath": "sprites\\sRoomLight\\sRoomLight.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "a2957c7c-d0d8-4cd7-8d06-d508bd5894b7",
             "Value": {
                 "id": "78ea0592-7e97-455b-bb7f-aca81fb4613d",
@@ -300,6 +324,14 @@
                 "id": "9f6890bf-9974-4e96-97f8-c45c004a1a23",
                 "resourcePath": "sprites\\sHeliRotors\\sHeliRotors.yy",
                 "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "b2020058-08af-4c34-b24c-9eba563b1d38",
+            "Value": {
+                "id": "2cefc9dc-4727-4222-85b4-fa3e62bd62e8",
+                "resourcePath": "objects\\oStairs\\oStairs.yy",
+                "resourceType": "GMObject"
             }
         },
         {
@@ -363,6 +395,14 @@
             "Value": {
                 "id": "7df78cf6-6b01-431c-8de4-4cd12029a0a9",
                 "resourcePath": "sprites\\sWall\\sWall.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "e479c54b-5bc0-4614-99b7-c3881bc215a1",
+            "Value": {
+                "id": "c37d461a-1e91-4f72-9708-ec99827ba11d",
+                "resourcePath": "sprites\\sTreasureLight\\sTreasureLight.yy",
                 "resourceType": "GMSprite"
             }
         },

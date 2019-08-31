@@ -97,5 +97,5 @@ switch (state) {
 }
 
 if global.lit and !place_meeting(x, y, oShadow) {
-	instance_destroy()
+	room_restart()
 }
