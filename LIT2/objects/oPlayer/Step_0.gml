@@ -24,7 +24,6 @@ switch (state) {
 			motiony = lerp(motiony, 0, 0.5)
 	
 		if xdir == 0 and ydir == 0 {
-			movement = IDLE
 			image_speed = 0
 			image_index = 0
 		} else image_speed = 1
@@ -54,6 +53,8 @@ switch (state) {
 	
 		x += motionx
 		y += motiony
+		
+		movement = MOVE
 		
 		if keyboard_check_pressed(vk_space) {
 			dash_timer = 0
@@ -89,6 +90,8 @@ switch (state) {
 		x += motionx
 		y += motiony
 		
+		movement = DASH
+		
 		if dash_timer < DASH_TIME
 			dash_timer++
 		else
@@ -98,4 +101,5 @@ switch (state) {
 
 if global.lit and !place_meeting(x, y, oShadow) {
 	room_restart()
+	
 }

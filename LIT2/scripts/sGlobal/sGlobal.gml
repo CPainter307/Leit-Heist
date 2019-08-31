@@ -7,6 +7,7 @@ enum LIGHT {
 
 global.lit = false
 global.light_dir = LIGHT.NORTH
+global.current_level = 1
 
 #macro RIGHT 0
 #macro UP 1
@@ -16,3 +17,5 @@ global.light_dir = LIGHT.NORTH
 #macro MOVE 0
 #macro IDLE 1
 #macro DASH 2
+
+window_set_size(room_width*1.5, room_height*1.5)

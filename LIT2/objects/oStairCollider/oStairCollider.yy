@@ -1,24 +1,15 @@
 {
-    "id": "c9239f46-e531-49f2-ac50-411e48e6caf8",
+    "id": "f42f3b30-dba2-409a-9838-1a03591920e0",
     "modelName": "GMObject",
     "mvc": "1.0",
-    "name": "oInit",
+    "name": "oStairCollider",
     "eventList": [
-        {
-            "id": "d79be775-2f16-46e7-877a-66c34409ca0b",
-            "modelName": "GMEvent",
-            "mvc": "1.0",
-            "IsDnD": false,
-            "collisionObjectId": "00000000-0000-0000-0000-000000000000",
-            "enumb": 0,
-            "eventtype": 0,
-            "m_owner": "c9239f46-e531-49f2-ac50-411e48e6caf8"
-        }
+        
     ],
     "maskSpriteId": "00000000-0000-0000-0000-000000000000",
     "overriddenProperties": null,
     "parentObjectId": "00000000-0000-0000-0000-000000000000",
-    "persistent": true,
+    "persistent": false,
     "physicsAngularDamping": 0.1,
     "physicsDensity": 0.5,
     "physicsFriction": 0.2,
@@ -33,6 +24,6 @@
     "physicsStartAwake": true,
     "properties": null,
     "solid": false,
-    "spriteId": "00000000-0000-0000-0000-000000000000",
-    "visible": true
+    "spriteId": "ac925fcb-5474-4d40-8619-5eeb681bd4c4",
+    "visible": false
 }
