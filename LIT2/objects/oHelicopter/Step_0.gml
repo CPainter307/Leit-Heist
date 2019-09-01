@@ -1,3 +1,10 @@
+if global.player_dead and !global.lit {
+	theta = 0
+	x = 1
+	y = 256
+}
+
+
 if !global.lit {
 	sprite_index = sHeli
 	theta -= theta_speed;

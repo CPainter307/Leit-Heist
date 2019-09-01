@@ -1,1 +1,1 @@
-global.room_start = false
+//global.room_start = false
