@@ -99,7 +99,7 @@ switch (state) {
 	break;
 }
 
-if global.lit and !place_meeting(x, y, oShadow) {
+if global.lit and (!place_meeting(x, y, oShadow) || place_meeting(x, y, oMirrorLight)) {
 	room_restart()
 	
 }

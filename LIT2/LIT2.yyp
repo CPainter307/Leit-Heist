@@ -79,6 +79,14 @@
             }
         },
         {
+            "Key": "1b3536c3-6b12-4ff6-aa2e-24c9e939e6c9",
+            "Value": {
+                "id": "ccae3916-b2f2-4db3-8fea-59b669f0ef5f",
+                "resourcePath": "objects\\oMirrorLeft\\oMirrorLeft.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "1b4fb19b-ecc9-4c23-ae18-7688b6b49772",
             "Value": {
                 "id": "eca77c54-42f7-4871-8d38-b8d8fd69de24",
@@ -100,6 +108,14 @@
                 "id": "8dd255f5-d1a1-471e-93be-ad52987a4c59",
                 "resourcePath": "timelines\\tlold2Shine\\tlold2Shine.yy",
                 "resourceType": "GMTimeline"
+            }
+        },
+        {
+            "Key": "2795da8b-0668-4bbb-a399-b2450f073a3f",
+            "Value": {
+                "id": "0ba92aeb-0e38-4203-900b-8c3ab22cec8c",
+                "resourcePath": "objects\\oMirrorLight\\oMirrorLight.yy",
+                "resourceType": "GMObject"
             }
         },
         {
@@ -404,6 +420,14 @@
                 "id": "e1f667f0-a532-4066-b636-b486ad08354d",
                 "resourcePath": "scripts\\sGlobal\\sGlobal.yy",
                 "resourceType": "GMScript"
+            }
+        },
+        {
+            "Key": "bd099e80-403f-4f29-9759-5bd9468aa994",
+            "Value": {
+                "id": "c35233ae-ec75-417e-837b-d7045167a543",
+                "resourcePath": "sprites\\sMirrorLight\\sMirrorLight.yy",
+                "resourceType": "GMSprite"
             }
         },
         {
