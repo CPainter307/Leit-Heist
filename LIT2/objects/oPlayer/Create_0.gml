@@ -14,7 +14,7 @@ movement = IDLE
 
 dir = 0
 
-
+walk_sound_counter = 0
 
 state = MOVE
 

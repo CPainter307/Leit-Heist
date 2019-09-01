@@ -28,8 +28,13 @@ switch (state) {
 			image_index = 0
 		} else image_speed = 1
 
-		if !(xdir == 0 and ydir == 0)
+		if !(xdir == 0 and ydir == 0) {
 			dir = point_direction(0, 0, xdir, ydir);
+			walk_sound_counter++
+			if walk_sound_counter%10 == 0 {
+				scr_play_sound("sStep", 3, 5)
+			}
+		}
 		face = round(dir / 90);
 		if (face == 4) face = RIGHT;
 
@@ -62,6 +67,7 @@ switch (state) {
 		}
 		if global.player_dead
 			state = DEAD
+			
 	break;
 	
 	case DASH:
