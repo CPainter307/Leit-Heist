@@ -44,19 +44,18 @@ switch (state) {
 	
 		
 		if (place_meeting(x+motionx, y, oCollidable)) {
-			//while (!place_meeting(x+sign(motionx), y, oWall)) {
-			//	x += sign(motionx);
-			//}
+			while (!place_meeting(x+sign(motionx), y, oCollidable)) {
+				x += sign(motionx);
+			}
 			motionx = 0;
 		}
+		x += motionx
 		if (place_meeting(x, y+motiony, oCollidable)) {
-		//	//while (!place_meeting(x, y+sign(motiony), oWall)) {
-		//	//	y += sign(motiony);
-		//	//}
+			while (!place_meeting(x, y+sign(motiony), oCollidable)) {
+				y += sign(motiony);
+			}
 			motiony = 0;
 		}
-	
-		x += motionx
 		y += motiony
 		
 		movement = MOVE
@@ -83,19 +82,18 @@ switch (state) {
 		
 		
 		if (place_meeting(x+motionx, y, oCollidable)) {
-			//while (!place_meeting(x+sign(motionx), y, oWall)) {
-			//	x += sign(motionx);
-			//}
+			while (!place_meeting(x+sign(motionx), y, oCollidable)) {
+				x += sign(motionx);
+			}
 			motionx = 0;
 		}
+		x += motionx
 		if (place_meeting(x, y+motiony, oCollidable)) {
-			//while (!place_meeting(x, y+sign(motiony), oWall)) {
-			//	y += sign(motiony);
-			//}
+			while (!place_meeting(x, y+sign(motiony), oCollidable)) {
+				y += sign(motiony);
+			}
 			motiony = 0;
 		}
-		
-		x += motionx
 		y += motiony
 		
 		movement = DASH
