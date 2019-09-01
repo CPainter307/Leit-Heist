@@ -103,14 +103,6 @@
             }
         },
         {
-            "Key": "281206e8-817f-4d7e-9a1e-680a97534f14",
-            "Value": {
-                "id": "01485096-f12f-4cec-a53a-b5b0f27a31d9",
-                "resourcePath": "sprites\\sShadow\\sShadow.yy",
-                "resourceType": "GMSprite"
-            }
-        },
-        {
             "Key": "2902ad9c-7f97-4524-8f10-4aa9be42f972",
             "Value": {
                 "id": "fd463321-b3f2-49df-9c91-ac3af6e39cf7",
@@ -151,6 +143,14 @@
             }
         },
         {
+            "Key": "34330016-3cdb-4c3c-9e50-c16f82b30495",
+            "Value": {
+                "id": "5b6ff0d4-8df4-4910-8366-da675c844f06",
+                "resourcePath": "sprites\\sMirrorLeft\\sMirrorLeft.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "356ce3df-6e38-4a95-8650-c0ef735ab753",
             "Value": {
                 "id": "6278c0a0-52c1-4faa-a476-85fef25a0a44",
@@ -180,6 +180,14 @@
                 "id": "d028be24-cf1d-49eb-8dd0-a06bec73baa4",
                 "resourcePath": "sprites\\sRoomDark\\sRoomDark.yy",
                 "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "512e14c0-c715-4bca-bd98-c0ffbfad9f98",
+            "Value": {
+                "id": "ec49b88e-cf8f-45f7-9cd3-90304f08f8b0",
+                "resourcePath": "objects\\oMirrorRight\\oMirrorRight.yy",
+                "resourceType": "GMObject"
             }
         },
         {
@@ -228,6 +236,14 @@
                 "id": "2ac2ba73-42e7-4269-b079-9e66bd8050a6",
                 "resourcePath": "views\\65e03da2-9f49-47cc-8588-e020878c04ad.yy",
                 "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "79e7b082-f482-4463-b649-1fb0592edb60",
+            "Value": {
+                "id": "5196595a-a6ff-477a-8e8d-88b9dc9847f7",
+                "resourcePath": "sprites\\sShadow\\sShadow.yy",
+                "resourceType": "GMSprite"
             }
         },
         {
@@ -452,6 +468,14 @@
                 "id": "a3ba90f2-42aa-415f-ac09-346087c15806",
                 "resourcePath": "objects\\oShadow\\oShadow.yy",
                 "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "ea9008f9-e22d-4203-bffa-8b4090a6d17d",
+            "Value": {
+                "id": "9434ca3c-e81c-43b9-bc84-9d9ffe743d80",
+                "resourcePath": "sprites\\sMirrorRight\\sMirrorRight.yy",
+                "resourceType": "GMSprite"
             }
         },
         {

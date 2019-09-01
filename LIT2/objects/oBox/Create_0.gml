@@ -6,10 +6,10 @@ shadow_right = center_x
 shadow_down = center_y
 shadow_left = center_x
 
-shadow_up_scale = 1
-shadow_right_scale = 1
-shadow_down_scale = 1
-shadow_left_scale = 1
+shadow_up_scale = 0
+shadow_right_scale = 0
+shadow_down_scale = 0
+shadow_left_scale = 0
 
 while (!instance_position(center_x, shadow_up, oWall)) { 
 	shadow_up--
