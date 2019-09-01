@@ -60,6 +60,8 @@ switch (state) {
 			dash_timer = 0
 			state = DASH
 		}
+		if global.player_dead
+			state = DEAD
 	break;
 	
 	case DASH:
@@ -96,10 +98,20 @@ switch (state) {
 			dash_timer++
 		else
 			state = MOVE
+		if global.player_dead
+			state = DEAD
+	break;
+	
+	case DEAD:
+	
 	break;
 }
 
 if global.lit and (!place_meeting(x, y, oShadow) || place_meeting(x, y, oMirrorLight)) {
+	global.player_dead = true
+}
+
+if global.player_dead and !global.lit {
+	global.player_dead = false
 	room_restart()
-	
 }

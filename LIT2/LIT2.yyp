@@ -111,6 +111,14 @@
             }
         },
         {
+            "Key": "278d58fd-7ed7-4e2f-a10d-ce3f3bec1461",
+            "Value": {
+                "id": "676c9cb1-9f0c-410d-a41a-a765656f87b7",
+                "resourcePath": "objects\\oLevelTransition\\oLevelTransition.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "2795da8b-0668-4bbb-a399-b2450f073a3f",
             "Value": {
                 "id": "0ba92aeb-0e38-4203-900b-8c3ab22cec8c",
@@ -484,6 +492,14 @@
                 "id": "c37d461a-1e91-4f72-9708-ec99827ba11d",
                 "resourcePath": "sprites\\sTreasureLight\\sTreasureLight.yy",
                 "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "e6f92dfc-49a5-4495-b15d-77116957987e",
+            "Value": {
+                "id": "331635e3-7bd7-4fd1-9a15-ce5c8425f68f",
+                "resourcePath": "sounds\\BeepBox_Song\\BeepBox_Song.yy",
+                "resourceType": "GMSound"
             }
         },
         {

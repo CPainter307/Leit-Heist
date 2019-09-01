@@ -9,3 +9,7 @@ if !global.lit {
 } else {
 	sprite_index = sHeliFlash	
 }
+
+if room == rTransition
+	visible = false
+else visible = true

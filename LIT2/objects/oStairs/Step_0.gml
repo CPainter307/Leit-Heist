@@ -4,7 +4,10 @@ if !instance_exists(oTreasure) {
 	image_index = 1
 	with oStairCollider {
 		if place_meeting(x, y, oPlayer) {
-			instance_create_layer(x, y, "Game", oNextLevel)
+			//timeline_running = false
+			//instance_create_layer(x, y, "Game", oNextLevel)
+			if room != rTransition
+				room_goto(rTransition)
 		}
 	}
 }
