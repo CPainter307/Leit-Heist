@@ -10,6 +10,7 @@ global.light_dir = LIGHT.NORTH
 global.current_level = 1
 global.player_dead = false
 global.room_start = false
+global.total_levels = 7
 
 #macro RIGHT 0
 #macro UP 1

@@ -4,7 +4,7 @@ if keyboard_check_pressed(vk_space) {
 }
 
 if global.room_start {
-	show_debug_message(string(tlShine.timeline_position))
+	//show_debug_message(string(tlShine.timeline_position))
 	if ((round(tlShine.timeline_position == 0)) or (round(tlShine.timeline_position) == 120) or (round(tlShine.timeline_position) == 240) or (round(tlShine.timeline_position) == 360)) {
 		tlShine.timeline_running = false
 		tlShine.timeline_position = 0
