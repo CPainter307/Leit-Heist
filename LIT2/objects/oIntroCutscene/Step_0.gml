@@ -1,6 +1,7 @@
 
 if keyboard_check_pressed(vk_space) and menu < 4 {
-	menu++	
+	menu++
+	audio_play_sound(sSelect, 5, false)
 }
 switch (menu) {
 	case 0:
@@ -36,7 +37,9 @@ switch (menu) {
 		
 		
 		count++
-		if keyboard_check_pressed(vk_space) and count >= 5{
+		if keyboard_check_pressed(vk_space) and count >= 5 {
+			if oBoyStart.image_speed == 0
+				audio_play_sound(sGameStart, 5, false)
 			oBoyStart.image_speed = 1
 		} 
 	break;

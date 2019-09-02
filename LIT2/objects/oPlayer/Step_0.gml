@@ -63,8 +63,10 @@ switch (state) {
 		if keyboard_check_pressed(vk_space) {
 			dash_timer = 0
 			state = DASH
+			scr_play_sound("sDash", 1, 4)
 		}
 		if global.player_dead {
+			audio_play_sound(sDeath, 9, false)
 			state = DEAD
 			image_index = 0
 		}
@@ -108,12 +110,14 @@ switch (state) {
 		else
 			state = MOVE
 		if global.player_dead {
+			audio_play_sound(sDeath, 9, false)
 			state = DEAD
 			image_index = 0
 		}
 	break;
 	
 	case DEAD:
+		coins_collected = 0
 		movement = DEAD
 		image_speed = 1
 	break;
@@ -136,6 +140,33 @@ if global.player_dead and ((round(tlShine.timeline_position == 0)) or (round(tlS
 	room_restart()
 	
 }
+
+if place_meeting(x, y, oTreasure) {
+	coins_collected++
+	play_coin_sound = true
+}
+
+if play_coin_sound {
+	switch(coins_collected) {
+		case 1:
+			audio_sound_pitch(sPickup, 1)
+			audio_play_sound(sPickup, 6, false)
+		break;
+		
+		case 2:
+			audio_sound_pitch(sPickup, 1.1)
+			audio_play_sound(sPickup, 6, false)
+		break;
+		
+		case 3:
+			audio_sound_pitch(sStairsOpen, 1.2)
+			audio_play_sound(sStairsOpen, 8, false)
+		break;
+	}
+	play_coin_sound = false
+}
+
+
 
 if (place_meeting(x, y, oShadow)) {
 	show_debug_message("shadow COLLISION");

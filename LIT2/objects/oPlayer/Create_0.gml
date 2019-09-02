@@ -20,6 +20,9 @@ state = MOVE
 
 dash_timer = 0
 
+coins_collected = 0
+play_coin_sound = false
+
 
 sprite[RIGHT, MOVE] = sBoyRight;
 sprite[UP, MOVE] = sBoyUp;

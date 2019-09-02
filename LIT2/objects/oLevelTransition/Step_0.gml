@@ -13,7 +13,7 @@ if global.room_start {
 		global.current_level++
 		
 		switch (global.current_level) {
-			case 2: room_goto(rLvl0); break;
+			case 2: room_goto(rLvl2); break;
 			case 3: room_goto(rLvl3); break;
 			case 4: room_goto(rLvl4); break;
 			case 5: room_goto(rLvl5); break;
