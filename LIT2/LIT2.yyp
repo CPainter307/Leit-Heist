@@ -447,6 +447,14 @@
             }
         },
         {
+            "Key": "8a32a7e8-759d-4c17-895b-b09a60058c7d",
+            "Value": {
+                "id": "ee27ff0c-596c-4330-9456-fa57d2d59880",
+                "resourcePath": "fonts\\CenturyGothic\\CenturyGothic.yy",
+                "resourceType": "GMFont"
+            }
+        },
+        {
             "Key": "8b19e448-0465-48a8-a5cd-8973325832c9",
             "Value": {
                 "id": "bceb2bfd-402c-4648-a72c-04dc931eb570",
