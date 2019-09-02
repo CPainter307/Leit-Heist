@@ -24,5 +24,4 @@ global.room_start = false
 global.prev_delta = -1
 
 
-
 //window_set_size(room_width*1.5, room_height*1.5)
