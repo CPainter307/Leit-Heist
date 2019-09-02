@@ -1,5 +1,6 @@
 
 if room != rTransition {
+	loading_text = false
 	time_steps[global.current_level]++
 }
 if room == rTransition {

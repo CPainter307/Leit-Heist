@@ -127,6 +127,14 @@
             }
         },
         {
+            "Key": "1d71377f-f230-44b2-a6c4-5401bd6a9e32",
+            "Value": {
+                "id": "9b36fded-c506-4f36-9616-774f827b61df",
+                "resourcePath": "sprites\\sCoinHitbox\\sCoinHitbox.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "1e56225d-33bb-41d9-bab2-5a4e12e26076",
             "Value": {
                 "id": "d3bca75d-8d07-461a-93f6-6943f41b3c15",

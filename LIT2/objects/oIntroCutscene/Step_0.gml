@@ -1,4 +1,5 @@
 
+
 if keyboard_check_pressed(vk_space) and menu < 4 {
 	menu++
 	audio_play_sound(sSelect, 5, false)
@@ -39,6 +40,7 @@ switch (menu) {
 		count++
 		if keyboard_check_pressed(vk_space) and count >= 5 {
 			oBoyStart.image_speed = 1
+			audio_stop_sound(title_screen)
 		} 
 	break;
 		

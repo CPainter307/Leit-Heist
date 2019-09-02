@@ -3,3 +3,5 @@ time_seconds = array_create(9+6, 0)
 t_str = ""
 
 final_time = 0
+
+loading_text = false
