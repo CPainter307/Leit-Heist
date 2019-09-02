@@ -38,8 +38,6 @@ switch (menu) {
 		
 		count++
 		if keyboard_check_pressed(vk_space) and count >= 5 {
-			if oBoyStart.image_speed == 0
-				audio_play_sound(sGameStart, 5, false)
 			oBoyStart.image_speed = 1
 		} 
 	break;

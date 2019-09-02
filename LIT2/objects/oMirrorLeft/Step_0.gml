@@ -37,7 +37,7 @@ if global.lit {
 				inst = instance_create_layer(x, y, "MirrorLight", oMirrorLight)
 				inst.image_yscale = light_down_scale
 			}
-			inst = instance_create_layer(x, y, "Shadow", oMirrorShadow)
+			inst = instance_create_layer(x, y, "Shadow", oShadow)
 			inst.image_xscale = shadow_right_scale
 		break;
 	}

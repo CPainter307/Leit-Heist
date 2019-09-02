@@ -143,6 +143,14 @@
             }
         },
         {
+            "Key": "226a1163-1bb8-4ee8-af4d-98acb4d1903e",
+            "Value": {
+                "id": "bee731c4-f6de-475d-9102-89649f5b6269",
+                "resourcePath": "sounds\\sStartGame\\sStartGame.yy",
+                "resourceType": "GMSound"
+            }
+        },
+        {
             "Key": "2357a970-3232-4d45-843d-051f6d17342d",
             "Value": {
                 "id": "8dd255f5-d1a1-471e-93be-ad52987a4c59",
@@ -276,6 +284,14 @@
                 "id": "1787e105-bed0-464d-a27f-143c60e0e1d7",
                 "resourcePath": "sprites\\sMirrorText\\sMirrorText.yy",
                 "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "4b629841-bac2-4fb9-9f4c-42a29011c269",
+            "Value": {
+                "id": "f3b2d6a3-f64f-42b8-a0db-05e071ecfc86",
+                "resourcePath": "sounds\\sGameStart2\\sGameStart2.yy",
+                "resourceType": "GMSound"
             }
         },
         {

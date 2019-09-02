@@ -126,7 +126,7 @@ switch (state) {
 
 
 
-if global.lit and !place_meeting(x, y, oShadow) || place_meeting(x, y, oMirrorLight) {
+if global.lit and (!place_meeting(x, y, oShadow) or place_meeting(x, y, oMirrorLight)) {
 	//if !place_meeting(x, y, oShadow) show_debug_message("no shadow")
 	global.player_dead = true
 }

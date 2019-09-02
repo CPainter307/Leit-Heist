@@ -33,22 +33,26 @@ shadow_left_scale = 0
 
 //check to see if box is in the way of mirror and wall
 
-while (!instance_position(center_x, light_up, oWall) && !instance_position(center_x, light_up, oBox)) { 
+while (!instance_position(center_x, light_up, oWall)) { 
 	light_up--
 	if (instance_position(center_x, light_up, oBox)) {
-		//we hit a box, no window to the north
-		windowNorth = false;
+		if !place_meeting(x, y, oBox) {
+			//we hit a box, no window to the north
+			windowNorth = false;
+		}
 	}
 }
 light_up_scale = (center_y-light_up-16)/32
 
 
 
-while (!instance_position(center_x, light_down, oWall) && !instance_position(center_x, light_down, oBox)) { 
+while (!instance_position(center_x, light_down, oWall)) { 
 	light_down++
 	if (instance_position(center_x, light_down, oBox)) {
-		//we hit a box, no window to the south
-		windowSouth = false;
+		if !place_meeting(x, y, oBox) {
+			//we hit a box, no window to the south
+			windowSouth = false;
+		}
 	}
 }
 light_down_scale = (light_down-center_y+16)/32
@@ -56,11 +60,13 @@ light_down_scale = (light_down-center_y+16)/32
 
 
 
-while (!instance_position(light_right, center_y, oWall) && !instance_position(light_right, center_y, oBox)) { 
+while (!instance_position(light_right, center_y, oWall)) { 
 	light_right++
 	if (instance_position(light_right, center_y, oBox)) {
-		//we hit a box, no window to the east
-		windowEast = false;
+		if !place_meeting(x, y, oBox) {
+			//we hit a box, no window to the east
+			windowEast = false;
+		}
 	}
 }
 light_right_scale = (light_right-center_x+16)/32
@@ -68,17 +74,19 @@ light_right_scale = (light_right-center_x+16)/32
 
 
 
-while (!instance_position(light_left, center_y, oWall) && !instance_position(light_left, center_y, oBox)) { 
+while (!instance_position(light_left, center_y, oWall)) { 
 	light_left--
 	if (instance_position(light_left, center_y, oBox)) {
-		//we hit a box, no window to the west
-		windowWest = false;
+		if !place_meeting(x, y, oBox) {
+			//we hit a box, no window to the west
+			windowWest = false;
+		}
 	}
 }
 light_left_scale = (center_x-light_left-16)/32
 
 #endregion
-
+/*
 #region shadow
 
 while (!instance_position(center_x, shadow_up, oWall)) { 
@@ -123,3 +131,4 @@ shadow_left_scale = (center_x-shadow_left-16)/32
 //shadow_left -= 16
 
 #endregion
+*/
