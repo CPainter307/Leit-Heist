@@ -34,10 +34,10 @@ if global.lit {
 	
 		case LIGHT.WEST:
 			if (windowWest) {
-				inst = instance_create_layer(x, y, "MirrorLight", oMirrorLight)
+				inst = instance_create_layer(x, y, "MirrorLight", oShadow)
 				inst.image_yscale = light_down_scale
 			}
-			inst = instance_create_layer(x, y, "Shadow", oShadow)
+			inst = instance_create_layer(x, y, "Shadow", oMirrorShadow)
 			inst.image_xscale = shadow_right_scale
 		break;
 	}

@@ -36,6 +36,11 @@ sprite[UP, DASH] = sBoySprintUp;
 sprite[LEFT, DASH] = sBoySprintLeft;
 sprite[DOWN, DASH] = sBoySprintDown;
 
+sprite[RIGHT, DEAD] = sDeathAnim;
+sprite[UP, DEAD] = sDeathAnim;
+sprite[LEFT, DEAD] = sDeathAnim;
+sprite[DOWN, DEAD] = sDeathAnim;
+
 //sprite[RIGHT, DASH] = spr_player_roll_right;
 //sprite[UP, DASH] = spr_player_roll_up;
 //sprite[LEFT, DASH] = spr_player_roll_left;

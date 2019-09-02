@@ -11,8 +11,14 @@ if global.room_start {
 		tlShine.timeline_running = true
 		global.room_start = false
 		global.current_level++
+		
 		switch (global.current_level) {
-			case 2: room_goto(rLvl5); break;
+			case 2: room_goto(rLvl0); break;
+			case 3: room_goto(rLvl3); break;
+			case 4: room_goto(rLvl4); break;
+			case 5: room_goto(rLvl5); break;
+			case 6: room_goto(rLvl6); break;
+			case 7: room_goto(rLvl7); break;
 		}
 		instance_destroy()
 	}

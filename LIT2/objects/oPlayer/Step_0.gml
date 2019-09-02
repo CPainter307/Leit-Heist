@@ -64,9 +64,10 @@ switch (state) {
 			dash_timer = 0
 			state = DASH
 		}
-		if global.player_dead
+		if global.player_dead {
 			state = DEAD
-			
+			image_index = 0
+		}
 	break;
 	
 	case DASH:
@@ -106,20 +107,27 @@ switch (state) {
 			dash_timer++
 		else
 			state = MOVE
-		if global.player_dead
+		if global.player_dead {
 			state = DEAD
+			image_index = 0
+		}
 	break;
 	
 	case DEAD:
-	
+		movement = DEAD
+		image_speed = 1
 	break;
 }
 
-if global.lit and (!place_meeting(x, y, oShadow) || place_meeting(x, y, oMirrorLight)) {
+
+
+
+if global.lit and !place_meeting(x, y, oShadow) || place_meeting(x, y, oMirrorLight) {
+	//if !place_meeting(x, y, oShadow) show_debug_message("no shadow")
 	global.player_dead = true
 }
 
-if global.player_dead and !global.lit {
+if global.player_dead and ((round(tlShine.timeline_position == 0)) or (round(tlShine.timeline_position) == 120) or (round(tlShine.timeline_position) == 240) or (round(tlShine.timeline_position) == 360)) {
 	global.player_dead = false
 	//timeline_index = tlShine
 	tlShine.timeline_running = false
@@ -127,4 +135,8 @@ if global.player_dead and !global.lit {
 	tlShine.timeline_running = true
 	room_restart()
 	
+}
+
+if (place_meeting(x, y, oShadow)) {
+	show_debug_message("shadow COLLISION");
 }

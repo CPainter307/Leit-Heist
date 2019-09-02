@@ -1,5 +1,5 @@
 
-if keyboard_check_pressed(vk_space) {
+if keyboard_check_pressed(vk_space) and menu < 4 {
 	menu++	
 }
 switch (menu) {
@@ -30,10 +30,15 @@ switch (menu) {
 	case 4:
 		layer_set_visible(lay_id, false)
 		lay_id = layer_get_id("Text5");
-		sprite_id = layer_sprite_get_id(lay_id, sBoyStart)
-		if layer_get_visible(lay_id)
-			sprite_id.image_index = 0
 		layer_set_visible(lay_id, true)
+		lay_id = layer_get_id("Boy5");
+		layer_set_visible(lay_id, true)
+		
+		
+		count++
+		if keyboard_check_pressed(vk_space) and count >= 5{
+			oBoyStart.image_speed = 1
+		} 
 	break;
 		
 }
