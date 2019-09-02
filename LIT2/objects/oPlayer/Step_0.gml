@@ -63,7 +63,7 @@ switch (state) {
 		if keyboard_check_pressed(vk_space) {
 			dash_timer = 0
 			state = DASH
-			scr_play_sound("sDash", 1, 4)
+			scr_play_sound("sSprint", 1, 4)
 		}
 		if global.player_dead {
 			audio_play_sound(sDeath, 9, false)

@@ -319,6 +319,14 @@
             }
         },
         {
+            "Key": "4aa9b57e-c264-48dc-8475-a0532e815ded",
+            "Value": {
+                "id": "b859a128-1807-4463-a70d-038bf6fc4afb",
+                "resourcePath": "sounds\\sSprint0\\sSprint0.yy",
+                "resourceType": "GMSound"
+            }
+        },
+        {
             "Key": "4b629841-bac2-4fb9-9f4c-42a29011c269",
             "Value": {
                 "id": "f3b2d6a3-f64f-42b8-a0db-05e071ecfc86",
