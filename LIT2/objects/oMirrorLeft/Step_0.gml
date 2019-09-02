@@ -42,3 +42,9 @@ if global.lit {
 		break;
 	}
 }
+
+if global.lit {
+	sprite_index = sMirrorLeftLight	
+} else {
+	sprite_index = sMirrorLeft
+}

@@ -13,12 +13,18 @@ if global.room_start {
 		global.current_level++
 		
 		switch (global.current_level) {
-			case 2: room_goto(rLvl2); break;
-			case 3: room_goto(rLvl3); break;
-			case 4: room_goto(rLvl4); break;
-			case 5: room_goto(rLvl5); break;
-			case 6: room_goto(rLvl6); break;
-			case 7: room_goto(rLvl7); break;
+			case 2:  room_goto(rLvl2); break;
+			case 3:  room_goto(rLvl3); break;
+			case 4:  room_goto(rLvl4); break;
+			case 5:  room_goto(rLvl5); break;
+			case 6:  room_goto(rLvl6); break;
+			case 7:  room_goto(rLvl7); break;
+			case 8:  room_goto(rLvl8); break;
+			case 9:  room_goto(rLvl9); break;
+			case 10: room_goto(rLvl10); break;
+			case 11: room_goto(rLvl11); break;
+			case 12: room_goto(rLvl12); break;
+			case 13: room_goto(rLvl13); break;
 		}
 		instance_destroy()
 	}

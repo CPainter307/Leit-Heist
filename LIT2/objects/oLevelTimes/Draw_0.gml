@@ -5,8 +5,9 @@ draw_text_ext_transformed(room_width/2, (room_height/2)+sin(get_timer()/100000),
 draw_set_color(c_white)
 draw_set_halign(fa_center)
 draw_set_font(CenturyGothic)
-if global.current_level >= 9 {
+if global.current_level >= 9+6 {
 	draw_text_ext_transformed(room_width/2, ((room_height/2)-50)+sin(get_timer()/100000), "Final Time: ", 10, 300, 1.5, 1.5, 0)
+	draw_text_ext_transformed(room_width/2, (50)+sin(get_timer()/100000), "HEIST COMPLETE!", 10, 300, 3, 3, 0)
 } else {
 	draw_text_ext_transformed(room_width/2, ((room_height/2)-50)+sin(get_timer()/100000), "Level " + string(global.current_level) + " Time:", 10, 300, 1.5, 1.5, 0)
 }

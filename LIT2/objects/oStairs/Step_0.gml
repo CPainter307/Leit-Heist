@@ -11,3 +11,9 @@ if !instance_exists(oTreasure) {
 		}
 	}
 }
+
+if global.lit {
+	sprite_index = sStairsLight
+} else {
+	sprite_index = sStairs	
+}
